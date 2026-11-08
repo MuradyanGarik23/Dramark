@@ -1,11 +1,11 @@
-// Переключатель языка (RU / EN). Без скриптов страница показывает оба языка сразу.
+// Переключатель языка (RU / EN / HY). Без скриптов страница показывает оба языка сразу.
 (function () {
   var root = document.documentElement;
   var lang = "ru";
   try { lang = localStorage.getItem("lang") || ""; } catch (e) {}
-  if (lang !== "ru" && lang !== "en") {
+  if (lang !== "ru" && lang !== "en" && lang !== "hy") {
     var n = (navigator.language || "en").toLowerCase();
-    lang = /^(ru|uk|be|kk)/.test(n) ? "ru" : "en";
+    lang = /^hy/.test(n) ? "hy" : /^(ru|uk|be|kk)/.test(n) ? "ru" : "en";
   }
   function apply(l) {
     root.setAttribute("data-show", l);
