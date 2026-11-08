@@ -58,6 +58,8 @@ html:not(.js) div[data-l="en"],html:not(.js) div[data-l="hy"]{border-top:1px das
 
 h2{font-size:clamp(26px,3.4vw,34px);letter-spacing:-.02em;margin:0 0 8px}
 .sub{color:var(--muted);margin:0 0 28px}
+.card.wide{grid-column:1/-1}
+.card.wide p{max-width:46em}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}
 .card .ic{width:44px;height:44px;border-radius:13px;background:var(--brand-soft);color:var(--brand);
