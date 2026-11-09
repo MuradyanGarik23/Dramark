@@ -79,7 +79,7 @@ footer .f{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between
 footer p{margin:0 0 6px}
 
 /* поддержка и вопросы */
-.faq{margin:0 0 56px}
+.faq{margin:0 0 104px}
 .faq details{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:0 20px;margin:0 0 10px;box-shadow:var(--shadow)}
 .faq summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
 .faq summary::-webkit-details-marker{display:none}
@@ -112,6 +112,7 @@ html:not(.js) .faq div[data-l="en"],html:not(.js) .faq div[data-l="hy"]{border-t
   .priv .btn{white-space:normal;text-align:center}
 }
 @media (max-width:560px){
+  .faq{margin-bottom:80px}
   body{font-size:16px}
   .grid{grid-template-columns:1fr}
   .brand{font-size:18px}
